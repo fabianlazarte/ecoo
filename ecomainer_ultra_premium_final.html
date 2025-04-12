@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecomainer | Soluciones Ecommerce Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #3b82f6;
+      --accent-dark: #2563eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--card);
+      padding: 100px 20px 60px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 48px;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 20px auto;
+    }
+    .button {
+      margin-top: 30px;
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .button:hover { background: var(--accent-dark); }
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card img {
+      width: 40px;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .why-us {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .why-us div {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .why-us span {
+      font-size: 24px;
+      color: var(--accent);
+    }
+    .testimonial {
+      font-style: italic;
+      background: #e9efff;
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      border-radius: 8px;
+      color: #374151;
+    }
+    footer {
+      background: #f1f5f9;
+      padding: 60px 20px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 36px; }
+      h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transformamos ecommerce en negocios escalables</h1>
+    <p>Diseño personalizado, automatización inteligente y datos en tiempo real. Todo en una solución boutique.</p>
+    <a href="#contacto" class="button">Agendar reunión</a>
+  </header>
+
+  <section>
+    <h2>Soluciones inteligentes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/3b82f6/shopify.png"/>
+        <h3>Tienda Shopify premium</h3>
+        <p>Experiencias de compra optimizadas desde el primer clic hasta el checkout.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/3b82f6/send-mass-email.png"/>
+        <h3>Automatización con Klaviyo</h3>
+        <p>Secuencias de email para atraer, convertir y fidelizar en piloto automático.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/3b82f6/combo-chart.png"/>
+        <h3>Integración de datos</h3>
+        <p>Pixel, eventos, y análisis avanzado para decisiones basadas en rendimiento real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="why-us">
+      <div><span>✓</span> Especialistas certificados en Shopify & Klaviyo</div>
+      <div><span>✓</span> Diseño exclusivo para marcas hispanas que quieren escalar</div>
+      <div><span>✓</span> Soporte humano y técnico 24/7 con seguimiento personalizado</div>
+      <div><span>✓</span> Resultados comprobados con clientes reales</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testimonios</h2>
+    <div class="grid">
+      <div class="testimonial">
+        “Pasamos de amateur a profesional en solo una semana. Nuestra tienda vende incluso mientras dormimos.” — <strong>@luzdelalma.co</strong>
+      </div>
+      <div class="testimonial">
+        “No solo automatizaron todo, sino que nos enseñaron cómo escalar. Hoy facturamos más con menos esfuerzo.” — <strong>@vinapremium</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ecomainer · Ecommerce Tech Company · contacto@ecomainer.com · Instagram: @ecomainer
+  </footer>
+</body>
+</html>
